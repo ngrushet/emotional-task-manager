@@ -1,2 +1,28 @@
-venv
-.git
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches
+*.sqlite3
+db.sqlite3
+
+# Logs
+*.log
+
+# Local development settings
+local_settings.py
+
+# Static files
+/static/
+
+# Media files
+/media/
+
+# Virtual environment
+venv/
+.env
+
+# IDE specific files
+.idea/
+.vscode/
