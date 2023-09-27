@@ -1,6 +1,6 @@
 from rest_framework import viewsets
-from .models import User, Task, Label, Slot, Emotion, TaskResult, Role
-from .serializers import UserSerializer, TaskSerializer, LabelSerializer, SlotSerializer, EmotionSerializer, TaskResultSerializer, RoleSerializer
+from .models import User, Task, Label, Slot, Emotion, TaskResult, Role, Status, Comment
+from .serializers import CommentSerializer, StatusSerializer, UserSerializer, TaskSerializer, LabelSerializer, SlotSerializer, EmotionSerializer, TaskResultSerializer, RoleSerializer
 
 class RoleViewSet(viewsets.ModelViewSet):
     queryset = Role.objects.all()
@@ -29,3 +29,13 @@ class EmotionViewSet(viewsets.ModelViewSet):
 class TaskResultViewSet(viewsets.ModelViewSet):
     queryset = TaskResult.objects.all()
     serializer_class = TaskResultSerializer
+
+
+class StatusViewSet(viewsets.ModelViewSet):
+    queryset = Status.objects.all()
+    serializer_class = StatusSerializer
+
+
+class CommentViewSet(viewsets.ModelViewSet):
+    queryset = Comment.objects.all()
+    serializer_class = CommentSerializer
