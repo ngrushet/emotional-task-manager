@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'tasks',
     'rest_framework',
-    "graphene_django"
 ]
 
 MIDDLEWARE = [

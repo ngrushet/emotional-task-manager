@@ -30,11 +30,9 @@ class TaskResultViewSet(viewsets.ModelViewSet):
     queryset = TaskResult.objects.all()
     serializer_class = TaskResultSerializer
 
-
 class StatusViewSet(viewsets.ModelViewSet):
     queryset = Status.objects.all()
     serializer_class = StatusSerializer
-
 
 class CommentViewSet(viewsets.ModelViewSet):
     queryset = Comment.objects.all()
